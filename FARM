@@ -1,5 +1,5 @@
 spawn(function()
- if Configs["Key"] == "X HUB" then
+ if Configs["Key"] == "XHUB-QVXZYH-WRRYY-TTRQZ" then
  if game.PlaceId == 15049111150 then
 game.StarterGui:SetCore("SendNotification",{
             Title = "Second Piece✅";
