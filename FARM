@@ -1,7 +1,3 @@
-getgenv().Configs = {
-   ["Key"] = "X HUB"
-}
-
 spawn(function()
  if Configs["Key"] == "X HUB" then
  if game.PlaceId == 15049111150 then
